@@ -1,4 +1,4 @@
-#import libraries need for the tasks
+#import libraries needed for the tasks
 import csv
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -12,7 +12,7 @@ sum_absolut = 0 #creates empty variable to store the sum
 for num in numbers: #iterate over numbers in the list 
     val = abs(num) #get the absolute value of num. Used AI to help me understand the abs() function. Understand that the absolute value of num is save as the varible val. To check that it the code was working I counted the values >= 10 in the list.
     if val >= 10: #checks if value is greater or equal to 10
-        sum_absolut += val #adds number to sum_absolut 
+        sum_absolut += val #adds value to sum_absolut 
 print(sum_absolut) #print variable
 print("\n") #empty line
 
@@ -20,7 +20,7 @@ print("\n") #empty line
 cube_numbers = [] #crete empty list to store the cubes of the negative numbers
 for num in numbers: #iterate over numbers in the list
     if num < 0: #checks if number is negative
-        cube_numbers.append(num**3) #calculates the cube of of num and append it to the list
+        cube_numbers.append(num**3) #calculates the cube of num and append it to the list
 print(cube_numbers) #prints list of cubes
 print("\n") 
 
@@ -39,7 +39,7 @@ print("\n")
 
 ###Part 2###
 #2.1
-df = pd.read_csv('brca_head500_genes.csv', sep=',') #reads the csv file and store it as a data frame + adds separator as comma
+df = pd.read_csv('brca_head500_genes.csv', sep=',') #reads the csv file and store it as a data frame called df + adds separator as comma
 
 #2.2.1/2.3
 def histo_plot(): #creates function to plot histogram
