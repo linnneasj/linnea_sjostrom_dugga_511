@@ -43,7 +43,7 @@ df = pd.read_csv('brca_head500_genes.csv', sep=',') #reads the csv file and stor
 
 #2.2.1/2.3
 def histo_plot(): #creates function to plot histogram
-    plt.hist(df['fpkm_log2'], bins=40, color='blue') #create histogram of the fpkm_log2 column in the data frame (df) saved in task #2.1
+    plt.hist(df['fpkm_log2'], bins=40, color='blue') #create histogram of the fpkm_log2 column in the data frame (df) saved in task #2.1, sets bin number and chose the color of my histogram to be blue
     plt.xlabel('Expression') #label x-axis
     plt.ylabel('Number of genes') #label y-axis
     plt.title('Distribution of gene expression') #title of the plot
